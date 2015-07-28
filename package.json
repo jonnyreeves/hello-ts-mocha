@@ -1,0 +1,19 @@
+{
+  "name": "helllo-ts-mocha",
+  "version": "1.0.0",
+  "description": "Getting started with TypeScript and mocha",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "tsc --module commonjs index.ts",
+    "pretest": "tsc test/*Test.ts --module commonjs",
+    "test": "mocha"
+  },
+  "author": "Jonny Reeves <npm@jonnyreeves.co.uk> (http://jonnyreeves.co.uk)",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^1.5.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
